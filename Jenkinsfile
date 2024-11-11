@@ -30,7 +30,7 @@ pipeline {
                 script {
                     // Run the Java file and redirect the output to a file (result.txt)
                     echo 'Running the Java program...'
-                    bat 'java ex > result.txt'  // Replace with your Java class name
+                    bat 'java tab > result.txt'  // Replace with your Java class name
                 }
             }
         }
