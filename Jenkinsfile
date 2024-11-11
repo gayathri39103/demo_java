@@ -20,7 +20,7 @@ pipeline {
                 script {
                     // Compile the Java file (assumes a .java file exists in the repo)
                     echo 'Compiling Java file...'
-                    sh 'javac ex.java'  // Replace with the actual Java file name
+                    bat 'javac ex.java'  // Replace with the actual Java file name
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
                 script {
                     // Run the Java file and redirect the output to a file (result.txt)
                     echo 'Running the Java program...'
-                    sh 'java ex > result.txt'  // Replace with your Java class name
+                    bat 'java ex > result.txt'  // Replace with your Java class name
                 }
             }
         }
